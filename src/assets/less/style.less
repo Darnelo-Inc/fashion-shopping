@@ -1,0 +1,28 @@
+//compress: true
+
+@import "vendor/reset";
+@import "vars";
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    line-height: 1.4;
+    color: @primary;
+    
+    background-color: @white;
+}
+
+*, *:before, *:after {
+   box-sizing: border-box; 
+}
+
+/* Import Blocks
+*/
+@import "blocks/container";
+@import "blocks/header";
+@import "blocks/nav";
+@import "blocks/btn";
