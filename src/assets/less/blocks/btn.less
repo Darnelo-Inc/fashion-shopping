@@ -1,14 +1,13 @@
-// main: style.less
+//main: ../style.less
 
 .button {
     display: inline-block;
-    padding: 1.5rem 2.2rem;
-    
-    font-family: inherit;
-    font-size: 2.2rem;
-    font-weight: 500;
-    color: @white;
-    text-transform: uppercase;
+    width: 13.5rem;
+    height: 6.5rem;
+    padding: 0;
+
+    font-size: 0;
+    color: transparent;
     
     border: none;
     border-radius: 7px;
@@ -17,34 +16,58 @@
     cursor: pointer;
     
     transition: background .1s ease-in-out;
-    
-    
+   
     &--header {
-        width: 13.5rem;
-        height: 6.5rem;
-        padding: 0;
-        
-        font-size: 0;
-        color: transparent;
-        
         &:after {
-            content: "SIGN IN";
-            width: 100%;
-
-            font-family: inherit;
+            content: "sign in";
+            
             font-size: 2.2rem;
-            font-weight: 500;
-            color: @white;
             text-transform: uppercase;
-
-            transform: translateY(-50%);
-            transition: letter-spacing .3s ease-in-out;
+        }
+    }
+    
+    &--intro {
+        position: relative;
+        width: 22rem;
+        height: 8rem;
+        margin-left: 22rem;
+        
+        &:before {
+            content: "";
+            position: absolute;
+            left: -22rem;
+            
+            display: block;
+            width: 19rem;
+            height: 4rem;
+            
+            background-color: @yellow;
+            border-radius: 59% 41% 100% 0% / 100% 19% 81% 0% ;
+            pointer-events: none;
         }
         
-        &:hover {
-            &:after {
-                letter-spacing: 2px;
-            }
+        &:after {
+            content: "shop now";
+            
+            font-size: 3rem;
+            text-transform: capitalize;
+        }
+    }
+    
+    &:after {
+        width: 100%;
+
+        font-family: inherit;
+        font-weight: 500;
+        color: @white;
+
+        transform: translateY(-50%);
+        transition: letter-spacing .3s ease-in-out;
+    }
+        
+    &:hover {
+        &:after {
+            letter-spacing: 2px;
         }
     }
     

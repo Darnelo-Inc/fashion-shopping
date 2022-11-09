@@ -1,0 +1,83 @@
+//main: ../style.less
+
+.intro {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    min-height: 60rem;
+    
+    background: #F4F6F5 url("../images/intro/background.jpg") center no-repeat;
+    background-size: cover;
+}
+
+.intro__content {
+    width: 50%;
+    margin-top: 8rem;
+    margin-left: 12rem;
+}
+
+.intro__title {
+    position: relative;
+    
+    margin-bottom: 2rem;
+    
+    font-size: 9.6rem;
+    font-weight: 900;
+    line-height: 1.25;
+    color: @black;
+}
+
+.intro__title-bg1 {
+    position: absolute;
+    z-index: 1;
+    
+    &:before {
+        content: "";
+        position: absolute;
+        left: -5rem;
+        z-index: -1;
+        
+        width: 46rem;
+        height: 11rem;
+        
+        background-color: @white;
+        
+        transform: rotateZ(-2deg);
+    }
+}
+
+.intro__title-bg2 {
+    position: absolute;
+    z-index: 1;
+    
+    &:before {
+        content: "";
+        position: absolute;
+        top: -.6rem;
+        left: -5rem;
+        z-index: -1;
+        
+        width: 50rem;
+        height: 12rem;
+        
+        background-color: @yellow;
+        
+        transform: rotateZ(-2deg);
+    }
+}
+
+.intro__decription {
+    margin-bottom: 3rem;
+    
+    font-size: 3.2rem;
+    font-weight: 400;
+    color: @secondary;
+}
+
+.intro__img {
+    width: 50%;
+    
+    img {
+        display: block;
+    }
+}
