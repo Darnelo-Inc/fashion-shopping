@@ -21,8 +21,8 @@ layout: default
 </div>
 
 
-<div class="brands">
-    <div class="container">
+<div class="container  container--wide">
+    <div class="brands">
         <div class="brands__inner">
             <div class="brands__item">
                 <img class="brands__logo" src="assets/images/brands/1.png" alt="h&m">
@@ -54,46 +54,80 @@ layout: default
 
 <div class="arrivals">
     <div class="container">
-        <h1 class="arrivals__header">NEW ARRIVALS</h1>
+        <h1 class="arrivals__title">NEW ARRIVALS</h1>
         
-        <div class="arrivals__cards">
-            <div class="arrivals__item">
-                <a href="#" target="_blank"><img class="arrivals__img" src="assets/images/arrivals/1.jpg" alt="1"></a>
+        <div class="cards">
+            <a class="card__item" href="#" target="_blank">
+                <img class="card__img" src="assets/images/arrivals/1.jpg" alt="1">
                 
-                <a href="#" class="arrivals__title">Hoodies &amp; Sweetshirt</a>
-                <a href="#" class="arrivals__link" target="_blank">Explore Now!</a>
-            </div>
+                <h2 class="card__title">Hoodies &amp; Sweetshirt</h2>
+                <h3 class="card__link">Explore Now!</h3>
+            </a>
             
-            <div class="arrivals__item">
-                <a href="#" target="_blank"><img class="arrivals__img" src="assets/images/arrivals/2.jpg" alt="2"></a>
+            <a class="card__item" href="#" target="_blank">
+                <img class="card__img" src="assets/images/arrivals/2.jpg" alt="2">
                 
-                <div class="arrivals__title">Coats &amp; Parkas</div>
-                <a href="#" class="arrivals__link" target="_blank">Explore Now!</a>
-            </div>
+                <h2 class="card__title">Coats &amp; Parkas</h2>
+                <h3 class="card__link">Explore Now!</h3>
+            </a>
             
-            <div class="arrivals__item">
-                <a href="#" target="_blank"><img class="arrivals__img" src="assets/images/arrivals/3.jpg" alt="3"></a>
+            <a class="card__item" href="#" target="_blank">
+                <img class="card__img" src="assets/images/arrivals/3.jpg" alt="3">
                 
-                <div class="arrivals__title">Tees &amp; T-Shirt</div>
-                <a href="#" class="arrivals__link" target="_blank">Explore Now!</a>
-            </div>
-        </div>
-    </div>
+                <h2 class="card__title">Tees &amp; T-Shirt</h2>
+                <h3 class="card__link">Explore Now!</h3>
+            </a>
+        </div><!-- /.cards -->
+    </div><!-- /.container -->
 </div><!-- /.arrivals -->
 
 
-<!--
 <div class="sale">
-    <div class="container">
+    <div class="container  container--wide">
         <div class="sale__content">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto sapiente mollitia voluptas doloremque, recusandae veritatis, blanditiis tempora similique distinctio nisi doloribus id, deleniti facere officia sed autem inventore, ex? Maxime?
+            <div class="sale__img">
+                <img src="assets/images/sale/sale.jpg" alt="sale">
+            </div>
+            
+            <div class="sale__inner">
+                <div class="sale__info">
+                    <h1 class="sale__title"><span class="sale__title-bg1">payday</span> <br>sale now</h1>
+
+                    <div class="sale__text">Spend minimal $100 get 30% off voucher code for your next purchase</div>
+
+                    <time class="sale__date" datetime="2021-06-10">1 June - 10 June 2021</time>
+
+                    <div class="sale__note">*Terms &amp; Conditions apply</div>
+
+                    <button class="button  button--sale" type="button"></button>
+                </div>
+            </div>
         </div>
-    </div>
-</div>
--->
+    </div><!-- /.container  container--wide -->
+</div><!-- /.sale -->
 
 
-
+<div class="trend">
+    <div class="container">
+        <h1 class="trend__title">Young’s Favourite</h1>
+        
+        <div class="cards  cards--trend">
+            <a class="card__item" href="#" target="_blank">
+                <img class="card__img" src="assets/images/trend/1.jpg" alt="1">
+                
+                <h2 class="card__title">Trending on instagram</h2>
+                <h3 class="card__link">Explore Now!</h3>
+            </a>
+            
+            <a class="card__item" href="#" target="_blank">
+                <img class="card__img" src="assets/images/trend/2.jpg" alt="2">
+                
+                <h2 class="card__title">All Under $40</h2>
+                <h3 class="card__link">Explore Now!</h3>
+            </a>
+        </div><!-- /.cards -->
+    </div><!-- /.container -->
+</div><!-- /.trend -->
 
 
 
