@@ -29,6 +29,10 @@
         border: none;
         background-color: @black;
         cursor: pointer;
+        
+        .burger.active > & {
+            background-color: transparent;
+        }
     }
     
     &:before,
@@ -42,14 +46,28 @@
         height: 100%;
         
         background-color: @black;
+        
+        transition: transform .2s ease-in-out;
     }
     
     &:before {
         top: -1.4rem;
+        
+        .burger.active > & {
+            top: 50%;
+            
+            transform: rotate(45deg);
+        }
     }
     
     &:after {
         bottom: -1.4rem;
+        
+        .burger.active > & {
+            top: 50%;
+            
+            transform: rotate(-45deg);
+        }
     }
 }
 

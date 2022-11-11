@@ -1,14 +1,53 @@
 //main: ../style.less
 
+.nav {
+    position: relative;
+    
+    display: flex;
+    align-items: center;
+    
+    @media @laptop-2 {
+        position: absolute;
+        top: 11rem;
+        right: 0;
+        z-index: 1000;
+        
+        flex-direction: column;
+        align-items: flex-start;
+        
+        background-color: darkgoldenrod;
+    }
+}
+
 .nav__list {
     display: flex;
     align-items: center;
     
     list-style: none;
+    
+    @media @laptop-2 {
+        flex-direction: column;
+        align-items: baseline;
+        
+        text-align: center;
+    }
 }
 
 .nav__item {
     margin-right: 6.5rem;
+    
+    @media @laptop-2 {
+        width: 100%;
+        padding: 4rem 3rem;
+        
+        background-color: darkgoldenrod;
+        
+        transition: background .2s ease-in-out;
+        
+        &:hover {
+            background-color: #a97905;
+        }
+    }
 }
 
 .nav__link {
@@ -31,6 +70,10 @@
         background-color: @black;
         
         transition: width .15s ease-in-out;
+        
+        @media @laptop-2 {
+            display: none;
+        }
     }
     
     &:hover {
@@ -39,5 +82,11 @@
             
             transition-duration: .3s;
         }
-    } 
+    }
+    
+    @media @laptop-2 {
+        display: block;
+        
+        font-size: 3rem;
+    }
 }
