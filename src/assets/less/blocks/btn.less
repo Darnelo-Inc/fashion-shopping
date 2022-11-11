@@ -45,6 +45,10 @@
             background-color: @yellow;
             border-radius: 59% 41% 100% 0% / 100% 19% 81% 0% ;
             pointer-events: none;
+            
+            @media @tablet-1 {
+                display: none;
+            }
         }
         
         &:after {
@@ -52,6 +56,10 @@
             
             font-size: 3rem;
             text-transform: capitalize;
+        }
+        
+        @media @tablet-1 {
+            margin-left: 0;
         }
     }
     
