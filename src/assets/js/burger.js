@@ -1,10 +1,9 @@
-//const burger = document.getElementById("burger")
-//const page = document.getElementById("page")
-//const body = document.body
+const burger = document.getElementById("burger")
+const nav = document.getElementById("nav")
+const page = document.getElementById("page")
+const body = document.body
 
-console.log("Hello")
-
-burger.addEventListener("click", => {
+burger.addEventListener("click", event => {
     if (burger.classList.contains("active")) {
         closeMenu()
     } else {
@@ -14,8 +13,10 @@ burger.addEventListener("click", => {
 
 function showMenu() {
     burger.classList.add("active")
+    nav.classList.add("active")
 }
 
 function closeMenu() {
     burger.classList.remove("active")
+    nav.classList.remove("active")
 }
