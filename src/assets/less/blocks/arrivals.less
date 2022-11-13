@@ -2,6 +2,10 @@
 
 .arrivals {
     margin-bottom: 15rem;
+    
+    @media @laptop-2 {
+        margin-bottom: 6rem;
+    }
 }
 
 .arrivals__title {
@@ -28,6 +32,18 @@
         background-color: @yellow;
         border-radius: 59% 41% 100% 0% / 100% 19% 81% 0% ;
         pointer-events: none;
+        
+        @media @laptop-2 {
+            left: 50%;
+        }
+    }
+    
+    @media @laptop-2 {
+        margin-bottom: 6rem; 
+        
+        font-size: 4.4rem;
+        
+        text-align: center;
     }
 }
 

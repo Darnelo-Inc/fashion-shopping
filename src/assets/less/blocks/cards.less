@@ -15,6 +15,13 @@
     width: 30%;
     
     text-decoration: none;
+    
+    @media @laptop-2 {
+        width: 100%;
+        margin-bottom: 8rem;
+        
+        text-align: center;
+    }
 }
 
 .card__img {
@@ -30,6 +37,11 @@
     
     &:hover {
         transform: translate3d(-7px, -7px, 0);
+    }
+    
+    @media @laptop-2 {
+        max-width: 58rem;
+        margin: auto auto 3rem;
     }
 }
 
@@ -76,6 +88,14 @@
         
         background-color: @black;
         pointer-events: none;
+    }
+    
+    &:before, &:after {
+        display: none;
+    }
+    
+    @media @laptop-2 {
+        font-size: 3rem;
     }
 }
 
