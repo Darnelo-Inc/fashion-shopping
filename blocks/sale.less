@@ -1,0 +1,188 @@
+//main: ../style.less
+
+.sale {
+  height: auto;
+  margin-bottom: 19rem;
+
+  @media @laptop-2 {
+    margin-bottom: 15rem;
+  }
+}
+
+.sale__content {
+  display: flex;
+  flex-wrap: wrap;
+
+  background: linear-gradient(to bottom, #f9df56, #e0c340);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.sale__img {
+  width: 50%;
+  height: auto;
+
+  img {
+    display: block;
+
+    @media @laptop-1 {
+      display: none;
+    }
+  }
+
+  @media @laptop-2 {
+    width: 100%;
+  }
+}
+
+.sale__title {
+  position: relative;
+
+  margin-bottom: 3rem;
+
+  font-size: 12rem;
+  line-height: 1.23;
+  color: @black;
+  text-transform: uppercase;
+
+  @media @laptop-1 {
+    margin-bottom: 2.8rem;
+
+    font-size: 7rem;
+  }
+
+  @media @laptop-2 {
+    margin-bottom: 2rem;
+
+    font-size: 5rem;
+  }
+}
+
+.sale__title-bg1 {
+  position: absolute;
+  z-index: 1;
+
+  &:before {
+    content: "";
+    position: absolute;
+    left: -2rem;
+    bottom: 2rem;
+    z-index: -1;
+
+    width: 54rem;
+    height: 13rem;
+
+    background-color: @white;
+
+    transform: rotateZ(-2deg);
+
+    @media @laptop-1 {
+      bottom: 1rem;
+
+      width: 34rem;
+      height: 10rem;
+    }
+
+    @media @laptop-2 {
+      bottom: 0.7rem;
+
+      width: 24rem;
+      height: 6.7rem;
+    }
+  }
+
+  @media @laptop-1 {
+    position: relative;
+  }
+}
+
+.sale__inner {
+  width: 50%;
+  padding: 10rem 0 4rem 8rem;
+
+  @media @laptop-1 {
+    width: 100%;
+    padding: 6rem;
+
+    text-align: center;
+  }
+
+  @media @laptop-2 {
+    padding-right: 4.5rem;
+    padding-left: 4.5rem;
+  }
+}
+
+.sale__info {
+  max-width: 67rem;
+
+  @media @laptop-1 {
+    max-width: 80rem;
+    margin: auto;
+  }
+}
+
+.sale__text {
+  margin-bottom: 4rem;
+
+  font-size: 3.3rem;
+  line-height: 1.44;
+  font-weight: 500;
+  color: @primary;
+
+  @media @laptop-1 {
+    margin-bottom: 3rem;
+
+    font-size: 3rem;
+  }
+
+  @media @laptop-2 {
+    margin-bottom: 2rem;
+
+    font-size: 2rem;
+  }
+}
+
+.sale__date {
+  display: block;
+  margin-bottom: 1rem;
+
+  font-size: 3.6rem;
+  line-height: 1.44;
+  font-weight: 700;
+  color: @black;
+
+  @media @laptop-1 {
+    margin-bottom: 0.7rem;
+
+    font-size: 3.3rem;
+  }
+
+  @media @laptop-2 {
+    margin-bottom: 0;
+
+    font-size: 2rem;
+  }
+}
+
+.sale__note {
+  margin-bottom: 5rem;
+
+  font-size: 3.3rem;
+  line-height: 1.44;
+  font-weight: 400;
+  color: @black;
+
+  @media @laptop-1 {
+    margin-bottom: 3.5rem;
+
+    font-size: 2.7rem;
+  }
+
+  @media @laptop-2 {
+    margin-bottom: 2.5rem;
+
+    font-size: 2rem;
+  }
+}

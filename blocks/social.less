@@ -1,0 +1,27 @@
+//main: ../style.less
+
+.social {
+    display: flex;
+    gap: 1.4rem;
+    
+    @media @laptop-2 {
+        justify-content: center;
+    }
+}
+
+.social__item {
+    display: flex;
+    height: 5.2rem;
+    width: 5.2rem;
+    justify-content: center;
+    align-items: center;
+    
+    background-color: @yellow;
+    border-radius: 1.5rem;
+    
+    transition: background .25s ease-in-out;
+    
+    &:hover {
+        background-color: @dark-yellow;
+    }
+}

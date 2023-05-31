@@ -1,0 +1,91 @@
+//main: ../style.less
+
+.promo {
+    padding-top: 14rem;
+    padding-bottom: 14rem;
+    
+    text-align: center;
+    
+    background-color: @dark-yellow;
+    
+    @media @laptop-1 {
+        padding-top: 10rem;
+        padding-bottom: 10rem;
+    }
+    
+    @media @laptop-2 {
+        padding-top: 7rem;
+        padding-bottom: 7rem;
+    }
+}
+
+.promo__title {
+    margin-bottom: 3.7rem;
+    
+    font-size: 5.5rem;
+    line-height: 1.27;
+    font-weight: 900;
+    color: @white;
+    
+    @media @laptop-1 {
+        margin-bottom: 3.4rem;
+        font-size: 4.6rem;
+        line-height: 1.2;
+    }
+    
+    @media @laptop-2 {
+        margin-bottom: 3rem;
+        font-size: 4rem;
+        font-weight: 700;
+        line-height: 1.14;
+    }
+}
+
+.promo__text {
+    margin-bottom: 5rem;
+    
+    font-size: 3.2rem;
+    line-height: 1.1;
+    font-weight: 400;
+    color: @white;
+    
+    @media @laptop-1 {
+        margin-bottom: 4.7rem;
+        font-size: 3rem;
+    }
+    
+    @media @laptop-2 {
+        padding-left: 2rem;
+        padding-right: 2rem;
+        margin-bottom: 4.3rem;
+        font-size: 1.5rem;
+    }
+}
+
+.promo__form {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 57.4rem;
+    margin: auto;
+}
+
+.promo__input {
+    width: 100%;
+    padding: 2.7rem;
+    padding-right: 17rem;
+    
+    font-family: inherit;
+    font-size: 2.4rem;
+    line-height: 1.46;
+    font-weight: 400;
+    
+    border-radius: 1rem;
+    border: none;
+    
+    &::placeholder {
+        color:@light-grey;
+    }
+}
